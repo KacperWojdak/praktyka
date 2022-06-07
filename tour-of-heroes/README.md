@@ -1,4 +1,4 @@
-#Strona z pomocą strony tutorial na Angular.io
+# Strona z pomocą strony tutorial na Angular.io
 https://angular.io/tutorial
 
 # TourOfHeroes
