@@ -1,4 +1,4 @@
-#Strona wykonana z pomocą nagrania tutorial YouTube: DigitalOcean
+# Strona wykonana z pomocą nagrania tutorial YouTube: DigitalOcean
 
 # Website
 
