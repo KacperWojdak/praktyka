@@ -1,0 +1,40 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="md-col-12 text-center bg-warning">
+      <h1>Image Upload</h1>
+    </div>
+  </div>
+
+<div class="container">
+  <form [formGroup] = "form" (ngSubmit) = "submitImage()">
+    <div><h2>{{imgMsg}}</h2></div>
+    <div><h2>{{msgs}}</h2></div>
+    <div class="progress" *ngIf="progress > 0">
+      <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" aria-valuemin="0" aria-valuemax="100" role="progressbar" [style.width] = "progress + '%'">
+    
+      </div>
+    </div>
+
+    <div class="form-group input-group-lg">
+      <input class="form-control" placeholder="First Name" formContolName = "first_name">
+    </div>
+
+    <div class="form-group input-group-lg">
+      <input class="form-control" placeholder="Last Name" formContolName = "last_name">
+    </div>
+
+    <div class="form-group input-group-lg">
+      <input class="form-control" placeholder="Email" formContolName = "email">
+    </div>
+
+    <div class="form-group">
+      <input type="file" (change)="uploadFile($event)">
+    </div>
+
+    <div class="form-group">
+      <button class="btn btn-success btn-block btn-lg btn-block">Submit</button>
+    </div>
+  </form>
+</div>
+
+</div>
