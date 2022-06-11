@@ -28,7 +28,7 @@ body {
     align-items: center;
 }
 .container .card:nth-child(1) {
-    background: linear-gradient(45deg, #6c7378, #000000);
+    background: linear-gradient(45deg, #a1a1a1, #000000);
 }
 .container .card:nth-child(2) {
     background: linear-gradient(45deg, #ea0744, #000000);
