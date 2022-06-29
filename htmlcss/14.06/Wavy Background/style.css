@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+section {
+    width: 100%;
+    min-height: 500px;
+}
+.wave {
+    position: relative;
+    background: linear-gradient(90deg, #ff0088, #8400ff);
+}
+.wave::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 240px;
+    background: url(wave.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

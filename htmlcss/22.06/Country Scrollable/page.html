@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Country Scrollable</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="jquery.pagepiling.css">
+</head>
+<body>
+    <div id="pagepiling">
+        <div class="section sec1"><h2>France</h2></div>
+        <div class="section sec2"><h2>Italy</h2></div>
+        <div class="section sec3"><h2>Spain</h2></div>
+        <div class="section sec4"><h2>Greece</h2></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="jquery.pagepiling.js"></script>
+    <script>
+        $(document).ready(function() {
+	        $('#pagepiling').pagepiling({
+                navigation: {
+                'textColor': '#fff',
+                'bulletsColor': '#fff',
+                'position': 'right',
+                'tooltips': ['France', 'Italy', 'Spain', 'Greece']
+        }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#pagepiling .section {
+    text-align: center;
+}
+#pagepiling .section h2 {
+    color: #fff;
+    font-size: 10em;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+#pagepiling .section.sec1 {
+    background: url(france.jpg);
+    background-size: cover;
+}
+#pagepiling .section.sec2 {
+    background: url(italy.jpg);
+    background-size: cover;
+}
+#pagepiling .section.sec3 {
+    background: url(spain.jpg);
+    background-size: cover;
+}
+#pagepiling .section.sec4 {
+    background: url(greece.jpg);
+    background-size: cover;
+}
+#pp-nav li .active span, .pp-slidesNav .active span {
+    background-color: #fff;
+}

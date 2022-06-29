@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sticky Header</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img.jpg" class="banner">
+        <a href="#" class="logo">Brand.</a>
+        <div class="toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Creative Fullscreen Sticky Header</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae quaerat quis nihil vero provident, molestias quam, tempore voluptatem expedita eius distinctio repudiandae ratione reiciendis inventore doloremque assumenda sint maiores dolorem!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet pariatur exercitationem assumenda nobis, blanditiis aperiam illo eum omnis voluptates, ratione inventore id! Maiores, veritatis? Vitae ipsum ipsa nostrum harum recusandae.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia architecto quod libero corrupti consectetur eveniet neque, minus molestiae nihil incidunt odit fuga voluptatem. Reiciendis, inventore placeat quia accusamus laborum aliquam.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod corporis nulla, suscipit fugiat, deleniti molestiae, accusamus voluptatem nesciunt iste optio aspernatur ad dicta cupiditate. Officia ullam quae expedita odit esse!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatum sit incidunt quas hic, maiores tempora distinctio quo vitae ab dignissimos, perspiciatis sequi, id rerum fugit cum! Ut, eum consectetur!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat obcaecati, reiciendis deleniti tempore facere suscipit nihil. Aliquam quasi impedit odio eum in inventore, dolorem expedita soluta tenetur. Ducimus, eveniet qui?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia excepturi atque est ullam error aliquid dicta dolore tenetur minus? Amet molestiae quasi beatae qui fugit aliquid doloremque atque eius consequuntur?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic magni quasi, a dolorem laborum laboriosam enim nihil iure, maxime totam pariatur excepturi explicabo ipsa, odit quam perferendis! Tenetur, enim ad.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fugiat, unde voluptas nostrum neque laboriosam maxime vitae id omnis quaerat, earum accusantium excepturi, impedit pariatur repellendus natus nihil minima blanditiis.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sit aut, labore placeat doloribus vel iure quos expedita esse libero asperiores voluptate sed. Fugit, perspiciatis? Nihil, repellendus rerum! Itaque, aperiam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quos. Quam, ducimus! Expedita officiis praesentium blanditiis corrupti placeat autem soluta recusandae nam possimus quidem ducimus aspernatur neque, modi vero non.
+        </p>
+    </section>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+
+        const navigation = document.querySelector('nav');
+        document.querySelector('.toggle').onclick = function(){
+            this.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

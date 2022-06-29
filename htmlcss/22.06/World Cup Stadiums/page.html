@@ -1,0 +1,70 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Cup Stadiums</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="jquery.pagepiling.css">
+</head>
+<body>
+    <div id="pagepiling">
+        <div class="section sec1"><h2>2026 World Cup<br>Stadiums</h2></div>
+
+        <div class="section sec2"><h2>Canada</h2></div>
+        <div class="section sec3"><h2>Toronto<br>BMO Field<br>Capacity: 30 000</h2></div>
+        <div class="section sec4"><h2>Vancouver<br>BC Place<br>Capacity: 54 500</h2></div>
+        
+        <div class="section sec5"><h2>Mexico</h2></div>
+        <div class="section sec6"><h2>Guadalajara<br>Estadio Akron<br>Capacity: 49 850</h2></div>
+        <div class="section sec7"><h2>Monterrey<br>Estadio BBVA<br>Capacity: 53 500</h2></div>
+        <div class="section sec8"><h2>Mexico City<br>Estadio Azteca<br>Capacity: 87 520</h2></div>
+        
+        <div class="section sec9"><h2>USA</h2></div>
+        <div class="section sec10"><h2>Miami<br>Hard Rock Stadium<br>Capacity: 64 760</h2></div>
+        <div class="section sec11"><h2>Boston<br>Gilette Stadium<br>Capacity: 65 870</h2></div>
+        <div class="section sec12"><h2>San Francisco<br>Levi's Stadium<br>Capacity: 68 500</h2></div>
+        <div class="section sec13"><h2>Seattle<br>Lumen Field<br>Capacity: 69 000</h2></div>
+        <div class="section sec14"><h2>Philadelphia<br>Lincoln Financial Field<br>Capacity: 69 800</h2></div>
+        <div class="section sec15"><h2>Los Angeles<br>SoFi Stadium<br>Capacity: 70 240</h2></div>
+        <div class="section sec16"><h2>Atlanta<br>Mercedes-Benz Stadium<br>Capacity: 71 000</h2></div>
+        <div class="section sec17"><h2>Houston<br>NRG Stadium<br>Capacity: 72 220</h2></div>
+        <div class="section sec18"><h2>Kansas City<br>Arrowhead Stadium<br>Capacity: 76 420</h2></div>
+        <div class="section sec19"><h2>Dallas<br>AT&T Stadium<br>Capacity: 80 000</h2></div>
+        <div class="section sec20"><h2>New York<br>MetLife Stadium<br>Capacity: 82 500</h2></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="jquery.pagepiling.js"></script>
+    <script>
+        $(document).ready(function() {
+	        $('#pagepiling').pagepiling({
+                navigation: {
+                'textColor': '#fff',
+                'bulletsColor': '#fff',
+                'position': 'right',
+                'tooltips': ['Intro', 
+                            '--Canada--',
+                            'Toronto',
+                            'Vancouver',
+                            '--Mexico--',
+                            'Guadalajara',
+                            'Monterrey',
+                            'Mexico City',
+                            '--USA--',
+                            'Miami',
+                            'Boston',
+                            'San Francisco',
+                            'Seattle',
+                            'Philadelphia',
+                            'Los Angeles',
+                            'Atlanta',
+                            'Houston',
+                            'Kansas City',
+                            'Dallas',
+                            'New York']
+        }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: 0.5s;
+}
+.icon {
+    position: relative;
+    display: flex;
+}
+.icon li {
+    list-style: none;
+}
+.icon li::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 14vw;
+    transform: translate(-50%, calc(-50% + 120px));
+    pointer-events: none;
+    font-weight: 700;
+    transition: 0.5s;
+    opacity: 0;
+}
+.icon li:hover::before {
+    opacity: 0.1;
+    transform: translate(-50%, calc(-50% + 150px));
+}
+.icon li a {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 4em;
+    transform-style: preserve-3d;
+    perspective: 300px;
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+    transition: background 0.25s;
+}
+.js-tilt-glare {
+    border-radius: 10px;
+}
+.icon li a:hover.facebook {
+    color: #fff;
+    background: #1877f2;
+}
+.icon li a:hover.youtube {
+    color: #fff;
+    background: #ff0000;
+}
+.icon li a:hover.whatsapp {
+    color: #fff;
+    background: #25d366;
+}
+.icon li a:hover.twitter {
+    color: #fff;
+    background: #0099ff;
+}
+.icon li a:hover.instagram {
+    color: #fff;
+    background: linear-gradient(to bottom, #0007dc, #E1306C, #FFDC80);
+}
+.icon li a ion-icon {
+    transition: 0.25s;
+    pointer-events: none;
+}
+.icon li a:hover ion-icon {
+    transform: scale(1.5) translateZ(25px);
+}

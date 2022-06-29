@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glass Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <div class="toggle" onclick="menuToggle()"></div>
+        </header>
+        <div class="glass"></div>
+        <div class="content">
+            <h2>Happiness is...<br><br><span>Crystal clear ocean water</span></h2>
+        </div>
+        <video src="video.mp4" autoplay loop muted></video>
+        <ul class="sci">
+            <li style="--i:1;"><a href="#">Facebook</a></li>
+            <li style="--i:2;"><a href="#">LinkedIn</a></li>
+            <li style="--i:3;"><a href="#">Twitter</a></li>
+        </ul>
+        <ul class="nav">
+            <li style="--i:1;"><a href="#">Home</a></li>
+            <li style="--i:2;"><a href="#">About Us</a></li>
+            <li style="--i:3;"><a href="#">Offers</a></li>
+            <li style="--i:4;"><a href="#">Contact</a></li>
+        </ul>
+    </section>
+    <script>
+        function menuToggle() {
+            const toggle = document.querySelector('.toggle');
+            const section = document.querySelector('section');
+            toggle.classList.toggle('active');
+            section.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>9-dots Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navigation">
+        <span style="--i:0;--x:-1;--y:0">
+            <a href="https://twitter.com">
+            <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+        </span>
+        <span style="--i:1;--x:1;--y:0">
+            <a href="https://instagram.com">
+            <ion-icon name="logo-instagram"></ion-icon>
+            </a>     
+        </span>
+        <span style="--i:2;--x:0;--y:-1">
+            <a href="https://youtube.com">
+            <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+        </span>
+        <span style="--i:3;--x:0;--y:1">
+            <a href="https://discord.com">
+            <ion-icon name="logo-discord"></ion-icon>
+            </a>
+        </span>
+        <span style="--i:4;--x:1;--y:1">
+            <a href="https://linkedin.com">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+        </span>
+        <span style="--i:5;--x:-1;--y:-1">
+            <a href="https://facebook.com">
+            <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+        </span>
+        <span style="--i:6;--x:0;--y:0">
+            <a href="https://google.com">
+            <ion-icon name="logo-google"></ion-icon>
+            </a>
+        </span>
+        <span style="--i:7;--x:-1;--y:1">
+            <a href="https://twitch.tv">
+            <ion-icon name="logo-twitch"></ion-icon>
+            </a>
+        </span>
+        <span style="--i:8;--x:1;--y:-1">
+            <a href="https://github.com">
+            <ion-icon name="logo-github"></ion-icon>
+            </a>
+        </span>
+    </div>
+    <script>
+        let navigation = document.querySelector('.navigation');
+        navigation.onclick = function() {
+            navigation.classList.toggle('active')
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body> 
+</html>

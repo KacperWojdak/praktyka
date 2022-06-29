@@ -1,0 +1,62 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="banner">
+            <img src="bg.jpg" class="cover">
+        </div>
+        <div class="navLink">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">My Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="sec">
+        <header>
+            <div class="toggle"></div>
+            <a href="#" class="btn">Contact Me</a>
+        </header>
+        <div class="imgBx">
+            <img src="man.jpg" class="cover">
+        </div>
+        <div class="content">
+            <h2>Hi, I am <br><span>Mitchel Fletcher</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque magnam, impedit explicabo cum nostrum error nulla quibusdam atque velit excepturi assumenda dignissimos fugiat nihil illum unde, sapiente quia. Necessitatibus!</p>
+            <a href="#" class="btn">Download My CV</a>
+        </div>
+
+        <footer>
+            <ul class="social">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            </ul>
+            <p class="copyright">Copyrights © 2022 Mitchel Fletcher. All Rights Reserved</p>
+        </footer>
+    </section>
+    
+<script>
+    let menuToggle = document.querySelector('.toggle');
+    let nav = document.querySelector('.nav');
+    let sec = document.querySelector('.sec');
+    menuToggle.onclick = function() {
+        menuToggle.classList.toggle('active');
+        nav.classList.toggle('active');
+        sec.classList.toggle('active');
+    }
+</script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

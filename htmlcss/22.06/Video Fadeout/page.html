@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Fadeout</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <video src="video.mp4" autoplay loop muted></video>
+    </section>
+    <section>
+        <div class="content">
+            <h2>Fadeout Video Background</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum animi illum consequatur voluptas ab omnis optio placeat necessitatibus, 
+                et magni vero vitae temporibus hic nobis sequi recusandae voluptatum, ratione sunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Ullam quidem praesentium aperiam incidunt totam recusandae? Unde ab necessitatibus fuga modi pariatur velit exercitationem? Modi sunt eaque sapiente quisquam vel quis!
+                Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis obcaecati quibusdam harum tempora soluta commodi quisquam a. Quae enim fugit molestias sit ipsum dignissimos, 
+                iusto numquam, ullam expedita quisquam reprehenderit!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus esse excepturi dicta alias, 
+                inventore molestiae magni dolor dolore placeat eius officia nam sint maiores? Culpa tempora voluptas sed consectetur illum? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Perferendis quisquam ea fugiat sequi labore dolores cupiditate earum sed! Sapiente vitae ipsa suscipit natus nisi vel magnam deleniti assumenda quis. Dolore. Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Modi tenetur consequatur, delectus blanditiis odio, sint deserunt facere officiis a ad nam explicabo fugiat beatae. Eligendi accusantium repellat rem animi iusto? Lorem ipsum dolor, 
+                sit amet consectetur adipisicing elit. Quia cumque cupiditate corporis aliquid quam aspernatur repudiandae nesciunt velit ipsam recusandae obcaecati enim numquam explicabo autem, eligendi deserunt, 
+                exercitationem, necessitatibus veritatis?</p>
+        </div>
+    </section>
+    <script>
+        let video = document.querySelector('video');
+        window.addEventListener('scroll', function(){
+            let value = 1 + window.scrollY / -600;
+            video.style.opacity = value;
+        })
+    </script>
+</body>
+</html>

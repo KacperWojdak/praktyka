@@ -1,0 +1,87 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="bg.jpg" id="bg">
+        <h2 id="text">Mountains</h2>
+        <img src="man.png" id="man">
+        <img src="clouds_1.png" id="clouds_1">
+        <img src="clouds_2.png" id="clouds_2">
+        <img src="mountain_left.png" id="mountain_left">
+        <img src="mountain_right.png" id="mountain_right">
+    </section>
+    <div class="sec">
+        <h2>ScrollTrigger is Awesome</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim libero ut exercitationem, alias quia reiciendis architecto, ab similique maiores explicabo sed ex autem vero quod neque, est esse sunt eligendi?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ab vero, ea, commodi vel illo natus maiores tenetur beatae odio excepturi nulla odit minima dignissimos voluptatibus nemo nam vitae voluptatum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad atque ipsam eligendi delectus adipisci earum aliquam voluptates nostrum tenetur hic dicta optio aliquid sapiente ratione ipsa, eveniet culpa vero quod.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid placeat minima consequatur rem hic facilis voluptate quasi fugit, qui quod sequi esse quam aliquam dolorum repellendus maiores? Officiis, eaque iste.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque libero similique ullam repellat eaque voluptatem porro explicabo earum quia iste odit quibusdam accusantium quas labore amet, doloremque ab assumenda obcaecati.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore deleniti eius consequuntur ut beatae nesciunt non cum hic veniam iusto vitae omnis porro quisquam recusandae vero inventore nulla, optio modi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit distinctio inventore nulla iure debitis recusandae reprehenderit ab doloribus deserunt ducimus, explicabo iusto. Sint, odio maiores cum quaerat excepturi tempore!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim libero ut exercitationem, alias quia reiciendis architecto, ab similique maiores explicabo sed ex autem vero quod neque, est esse sunt eligendi?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ab vero, ea, commodi vel illo natus maiores tenetur beatae odio excepturi nulla odit minima dignissimos voluptatibus nemo nam vitae voluptatum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit distinctio inventore nulla iure debitis recusandae reprehenderit ab doloribus deserunt ducimus, explicabo iusto. Sint, odio maiores cum quaerat excepturi tempore!    
+        </p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.to("#bg", {
+            scrollTrigger: {
+                scrub: 1
+            },
+            scale: 1.5
+        })
+
+        gsap.to("#man", {
+            scrollTrigger: {
+                scrub: 1
+            },
+            scale: 0.5
+        })
+
+        gsap.to("#mountain_left", {
+            scrollTrigger: {
+                scrub: 1
+            },
+            x: -500,
+        })
+
+        gsap.to("#mountain_right", {
+            scrollTrigger: {
+                scrub: 1
+            },
+            x: 500,
+        })
+
+        gsap.to("#clouds_1", {
+            scrollTrigger: {
+                scrub: 1
+            },
+            x: 200,
+        })
+
+        gsap.to("#clouds_2", {
+            scrollTrigger: {
+                scrub: 1
+            },
+            x: -200,
+        })
+
+        gsap.to("#text", {
+            scrollTrigger: {
+                scrub: 1
+            },
+            y: 500,
+        })
+    </script>
+</body>
+</html>

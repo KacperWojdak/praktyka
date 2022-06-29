@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+#pagepiling .section {
+    text-align: center;
+}
+#pagepiling .section h2 {
+    color: #fff;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+#pagepiling .section.sec1 {
+    background: url(bg.jpg);
+    background-size: cover;
+    font-size: 6em;
+    text-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+}
+#pagepiling .section.sec2 {
+    background: url(canada.png);
+    background-size: cover;
+    font-size: 5em;
+    text-shadow: 15px 10px 20px rgba(0, 0, 0, 1);
+}
+#pagepiling .section.sec3 {
+    background: url(toronto.jpg);
+    background-size: cover;
+    text-shadow: 15px 10px 20px rgba(0, 0, 0, 1);
+    font-size: 4em;
+}
+#pagepiling .section.sec4 {
+    background: url(vancouver.jpg);
+    background-size: cover;
+    text-shadow: 15px 10px 20px rgba(0, 0, 0, 1);
+    font-size: 4em;
+}
+#pagepiling .section.sec5 {
+    background: url(mexico.png);
+    background-size: cover;
+    font-size: 10em;
+    text-shadow: 15px 10px 20px rgba(0, 0, 0, 1);
+    font-size: 4em;
+}
+#pagepiling .section.sec6 {
+    background: url(guadalajara.jpg);
+    background-size: cover;
+    text-shadow: 15px 10px 20px rgba(0, 0, 0, 1);
+    font-size: 4em;
+}
+#pagepiling .section.sec7 {
+    background: url(monterrey.jpg);
+    background-size: cover;
+    text-shadow: 15px 10px 20px rgba(0, 0, 0, 1);
+    font-size: 4em;
+}
+#pagepiling .section.sec8 {
+    background: url(mexico_city.jpg);
+    background-size: cover;
+    text-shadow: 15px 10px 20px rgba(0, 0, 0, 1);
+    font-size: 4em;
+}
+#pagepiling .section.sec9 {
+    background: url(usa.png);
+    background-size: cover;
+    font-size: 8em;
+    text-shadow: 10px 0 15px rgba(0, 0, 0, 0.5);
+}
+#pagepiling .section.sec10 {
+    background: url(miami.jpg);
+    background-size: cover;
+    text-shadow: 15px 10px 20px rgba(0, 0, 0, 1);
+    font-size: 4em;
+}
+#pagepiling .section.sec11 {
+    background: url(boston.jpg);
+    background-size: cover;
+    text-shadow: 15px 10px 20px rgba(0, 0, 0, 1);
+    font-size: 4em;
+}
+#pagepiling .section.sec12 {
+    background: url(san_francisco.jpg);
+    background-size: cover;
+    text-shadow: 15px 10px 20px rgba(0, 0, 0, 1);
+    font-size: 4em;
+}
+#pagepiling .section.sec13 {
+    background: url(seattle.jpg);
+    background-size: cover;
+    text-shadow: 15px 10px 20px rgba(0, 0, 0, 1);
+    font-size: 4em;
+}
+#pagepiling .section.sec14 {
+    background: url(philadelphia.jpg);
+    background-size: cover;
+    text-shadow: 15px 10px 20px rgba(0, 0, 0, 1);
+    font-size: 4em;
+}
+#pagepiling .section.sec15 {
+    background: url(los_angeles.jpg);
+    background-size: cover;
+    text-shadow: 15px 10px 20px rgba(0, 0, 0, 1);
+    font-size: 4em;
+}
+#pagepiling .section.sec16 {
+    background: url(atlanta.jpg);
+    background-size: cover;
+    text-shadow: 15px 10px 20px rgba(0, 0, 0, 1);
+    font-size: 4em;
+}
+#pagepiling .section.sec17 {
+    background: url(houston.jpg);
+    background-size: cover;
+    text-shadow: 15px 10px 20px rgba(0, 0, 0, 1);
+    font-size: 4em;
+}
+#pagepiling .section.sec18 {
+    background: url(kansas_city.jpg);
+    background-size: cover;
+    text-shadow: 15px 10px 20px rgba(0, 0, 0, 1);
+    font-size: 4em;
+}
+#pagepiling .section.sec19 {
+    background: url(dallas.jpg);
+    background-size: cover;
+    text-shadow: 15px 10px 20px rgba(0, 0, 0, 1);
+    font-size: 4em;
+}
+#pagepiling .section.sec20 {
+    background: url(new_york.jpg);
+    background-size: cover;
+    text-shadow: 15px 10px 20px rgba(0, 0, 0, 1);
+    font-size: 4em;
+}

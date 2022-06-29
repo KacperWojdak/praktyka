@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Social 3D Icons</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="social">
+        <ul class="icon">
+            <li data-text="Facebook" data-color="#1877f2">
+                <a href="#" class="facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+            </li>
+            <li data-text="YouTube" data-color="#ff0000">
+                <a href="#" class="youtube"><ion-icon name="logo-youtube"></ion-icon></a>
+            </li>
+            <li data-text="WhatsApp" data-color="#25d366">
+                <a href="#" class="whatsapp"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            </li>
+            <li data-text="Twitter" data-color="#0099ff">
+                <a href="#" class="twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+            </li>
+            <li data-text="Instagram" data-color="#e4405f">
+                <a href="#" class="instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+        </ul>
+    </section>
+
+    <script src="vanilla-tilt.min.js"></script>
+
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".icon li a"), {
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 1,
+        });
+
+        let list = document.querySelectorAll('.icon li');
+        let bg = document.querySelector('.social');
+        list.forEach(elements => {
+            elements.addEventListener('mouseenter', function(event) {
+                let color = event.target.getAttribute('data-color');
+                bg.style.backgroundColor = color;
+            })
+            elements.addEventListener('mouseleave', function(event) {
+                bg.style.backgroundColor = '#fff';
+            })
+        })
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Coming Soon</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img src="curve2.png" class="wave">
+        <div class="contentBx">
+            <h2>Coming Soon</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus molestiae ipsam voluptatibus reiciendis, quas tenetur laborum suscipit excepturi illo aut nobis. Accusamus at perferendis esse, laborum corrupti quidem ut blanditiis.</p>            
+            <div class="countdown">
+                <div class="time"><div id="day"></div><span>Days</span></div>
+                <div class="time"><div id="hour"></div><span>Hours</span></div>
+                <div class="time"><div id="minute"></div><span>Minutes</span></div>
+                <div class="time"><div id="second"></div><span>Seconds</span></div>
+            </div>
+            <a href="#" onclick="toggle()">Notify Me!</a>
+        </div>
+        <div class="imgBx">
+            <img src="under_construction.png">
+            <ul class="sci">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="newsletter">
+        <h2>Stay Tuned</h2>
+        <p>Get notified at launch</p>
+        <div class="inputBox">
+            <form>
+                <input type="email" name="" required="" placeholder="Enter your email">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <img src="close.png" class="close" onclick="toggle()">
+    </div>
+    <script>
+
+        function toggle(){
+            var newsletter = document.querySelector('.newsletter');
+            newsletter.classList.toggle('active');
+        }
+
+        var countDate = new Date('Sep 15, 2022 15:30:00').getTime();
+        function countDownDate(){
+            var now = new Date().getTime();
+            gap = countDate - now;
+
+            var second = 1000;
+            var minute = second * 60;
+            var hour = minute * 60;
+            var day = hour * 24;
+
+            var d = Math.floor(gap / (day));
+            var h = Math.floor((gap % (day)) / (hour));
+            var m = Math.floor((gap % (hour)) / (minute));
+            var s = Math.floor((gap % (minute)) / second);
+
+            document.getElementById('day').innerText = d;
+            document.getElementById('hour').innerText = h;
+            document.getElementById('minute').innerText = m;
+            document.getElementById('second').innerText = s;
+        }
+        setInterval(function(){
+            countDownDate();
+        }, 1000)
+    </script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
