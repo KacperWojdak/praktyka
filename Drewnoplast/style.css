@@ -210,6 +210,7 @@ header .flags .flag2 {
 }
 .banner .title .arrow_left {
     position: absolute;
+    opacity: 0.5;
     left: 25%;
     top: 50%;
     width: 16px;
@@ -223,6 +224,7 @@ header .flags .flag2 {
 }
 .banner .title .arrow_right {
     position: absolute;
+    opacity: 0.5;
     left: 72%;
     top: 50%;
     width: 16px;
@@ -247,6 +249,7 @@ header .flags .flag2 {
     cursor: pointer;
 }
 .banner .slider .circle {
+    opacity: 0.5;
     width: 15px;
     height: 15px;
     background: #fff;
@@ -254,8 +257,8 @@ header .flags .flag2 {
     transition: 0.5s;
 }
 .banner .slider .circle.active {
-    border: 1px solid white;
     background: #d30018;
+    opacity: 1;
 }
 /* ---------Realizacja---------- */
 .realization {
