@@ -507,14 +507,6 @@ header .flags .flag2 {
     margin-left: 82px;
     transform: translateY(-15px);
 }
-.aboutUs .aboutContent .col50 .imgAbout .white {
-    position: absolute;
-    height: 18px;
-    background: #fff;
-    width: 65%;
-    left: 64px;
-    top: 335px;
-}
 
 /* --------Oferta-------------- */
 .offer {
