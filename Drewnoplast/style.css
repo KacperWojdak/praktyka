@@ -42,7 +42,7 @@ header .headerText .textBox {
     justify-content: center;
     align-items: center;
 }
-header .headerText img {
+header .headerText ion-icon {
     color: #d30018;
     margin-right: 5px;
 }
