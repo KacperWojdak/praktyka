@@ -1235,6 +1235,7 @@ footer .contentInfo .info a {
     }
     .offer {
         width: 992px;
+        height: 1250px;
     }
     .offerText {
         width: 100%;
@@ -1248,52 +1249,57 @@ footer .contentInfo .info a {
         font-size: 17px;
     }
     .offer .offerContent {
+        width: 800px;
         flex-direction: column;
         justify-content: center;
         display: grid;
         grid-template-columns: auto auto;
+        gap: 10px;
+        height: 910px;
     }
     .offer .offerContent .box {
         padding: 10px;
-        width: 500px;
-        height: 500px;
+        width: 400px;
+        height: 450px;
         overflow: hidden;
     }
     .offer .offerContent .box h1 {
-        font-size: 80px;
-        line-height: 110px;
+        font-size: 70px;
+        line-height: 70px;
     }
     .offer .offerContent .box h2 {
-        font-size: 30px;
+        font-size: 25px;
         line-height: 45px;
+        width: 400px;
     }
     .offer .offerContent .box p {
-        width: 450px;
+        width: 380px;
         font-size: 15px;
         line-height: 25px;
     }
     .logoBar {
         width: 992px;
+        top: 4200px;
     }
     .logoBar .bar {
         width: 100%;
         left: 10px;
     }
     .logoBar .bar img:nth-child(1) {
-        width: 165px;
-        height: 45px;
+        width: 120px;
+        height: 35px;
     }
     .logoBar .bar img {
-        width: 100px;
-        height: 110px;
+        width: 75px;
+        height: 90px;
     }
     .logoBar .bar img:nth-child(3) {
-        width: 160px;
-        height: 80px;
+        width: 100px;
+        height: 70px;
     }
     .logoBar .bar img:nth-child(5) {
-        width: 175px;
-        height: 50px;
+        width: 75px;
+        height: 90px;
     }
     .latestNews {
         width: 992px;
