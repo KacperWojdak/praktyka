@@ -929,6 +929,9 @@ footer .contentInfo .info a {
         height: 42px;
         margin-top: 0px;
     }
+    .aboutUs .aboutContent .textAbout button p {
+        font-size: 20px;
+    }
     .aboutUs .aboutContent .col50 {
         width: 50%;
     }
@@ -1144,8 +1147,24 @@ footer .contentInfo .info a {
     .realization {
         width: 992px;
     }
+    .realization .realizationText {
+        width: 992px;
+        height: 110px;
+    }
     .realization .realizationImg {
         width: 992px;
+    }
+    .realization .realizationImg .textBx1 {
+        margin-left: 70px;
+    }
+    .realization .realizationImg .textBx2 {
+        margin-left: 70px;
+    }
+    .realization .realizationImg .textBx3 {
+        margin-left: 70px;
+    }
+    .realization .realizationImg .textBx4 {
+        margin-left: 70px;
     }
     .realization .realizationImg h3 {
         font-size: 30px;
@@ -1167,40 +1186,52 @@ footer .contentInfo .info a {
     .aboutUs {
         width: 992px;
     }
+    .aboutUs .aboutContent {
+        width: 800px;
+    }
     .aboutUs .aboutContent .col50 {
         width: 50%;
     }
     .aboutUs .aboutContent .textAbout h2 {
         height: 50px;
         font-weight: 200;
-        font-size: 32px;
-        line-height: 48px;
+        font-size: 25px;
+        line-height: 40px;
+        width: 400px;
     }
     .aboutUs .aboutContent .textAbout p.ipsum1 {
         font-size: 14px;
         line-height: 28px; 
+        width: 400px;
     }
     .aboutUs .aboutContent .textAbout p.ipsum2 {
         font-size: 14px;
         line-height: 28px;
+        width: 400px;
     }
     .aboutUs .aboutContent .textAbout button {
-        width: 100px;
+        width: 85px;
         height: 42px;
-        margin-top: 0px;
+        margin-top: 20px;
+    }
+    .aboutUs .aboutContent .textAbout button p {
+        font-size: 13px;
     }
     .aboutUs .aboutContent .col50 {
         width: 50%;
+        margin-right: 40px;
     }
     .aboutUs .aboutContent .col50 .imgAbout {
         width: 50%;
     }
     .aboutUs .aboutContent .col50 .imgAbout img.about1 {
-        width: 460px;
-        height: 320px;
+        width: 400px;
+        height: 300px;
     }
     .aboutUs .aboutContent .col50 .imgAbout img.about2 {
         margin-left: 45px;
+        width: 310px;
+        height: 200px;
     }
     .offer {
         width: 992px;
