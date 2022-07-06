@@ -640,6 +640,20 @@ header .flags .flag2 {
     flex-direction: column;
     align-items: flex-start;
     width: 1440px;
+    height: 1200px;
+}
+.latestNews .news {
+    width: 1440px;
+    height: 1200px;
+}
+.latestNews .news h2 {
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 51px;
+    text-transform: uppercase;
+    color: #636363;
+    height: 51px;
+    transform: translateX(100px);
 }
 .latestNews .newsContent {
     display: flex;
@@ -651,14 +665,6 @@ header .flags .flag2 {
     width: 1240px;
     top: 50px;
     left: 100px;
-}
-.latestNews .newsContent h2 {
-    font-weight: 200;
-    font-size: 40px;
-    line-height: 51px;
-    text-transform: uppercase;
-    color: #636363;
-    height: 51px;
 }
 .latestNews .newsContent .imgNewsBox {
     display: flex;
@@ -709,9 +715,7 @@ header .flags .flag2 {
     width: 109px;
     height: 45px;
     background: #d30018;
-    border-radius: 5px;
     cursor: pointer;
-    transition: 0.5s;
     border: none;
 }
 .latestNews .newsContent .imgNewsBox button p {
@@ -723,10 +727,6 @@ header .flags .flag2 {
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-}
-.latestNews .newsContent .imgNewsBox button:hover {
-    background: #d30018;
-    transform: scale(1.1);
 }
 /* ----------------- Region --------------*/
 .region {
@@ -872,4 +872,188 @@ footer .contentInfo .info a {
     text-align: center;
     color: #636363;
     text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+    header {
+        width: 1200px;
+    }
+    .banner {
+        width: 1200px;
+    }
+    .realization {
+        width: 1200px;
+    }
+    .realization .realizationImg {
+        width: 1200px;
+    }
+    .realization .realizationImg h3 {
+        font-size: 30px;
+        line-height: 41px;
+    }
+    .realization .realizationImg p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .realization .realizationImg button {
+        width: 100px;
+        height: 40px;
+        margin-top: 15px;   
+    }
+    .realization .realizationImg button p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .aboutUs {
+        width: 1200px;
+    }
+    .aboutUs .aboutContent .col50 {
+        width: 50%;
+    }
+    .aboutUs .aboutContent .textAbout h2 {
+        height: 50px;
+        font-weight: 200;
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .aboutUs .aboutContent .textAbout p.ipsum1 {
+        font-size: 14px;
+        line-height: 28px; 
+    }
+    .aboutUs .aboutContent .textAbout p.ipsum2 {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .aboutUs .aboutContent .textAbout button {
+        width: 100px;
+        height: 42px;
+        margin-top: 0px;
+    }
+    .aboutUs .aboutContent .col50 {
+        width: 50%;
+    }
+    .aboutUs .aboutContent .col50 .imgAbout {
+        width: 50%;
+    }
+    .aboutUs .aboutContent .col50 .imgAbout img.about1 {
+        width: 460px;
+        height: 320px;
+    }
+    .aboutUs .aboutContent .col50 .imgAbout img.about2 {
+        margin-left: 45px;
+    }
+    .offer {
+        width: 1200px;
+    }
+    .offerText {
+        width: 100%;
+    }
+    .offer .offerText h2 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .offer .offerText p {
+        width: 100%;
+        font-size: 17px;
+    }
+    .offer .offerContent {
+        flex-direction: column;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .offer .offerContent .box {
+        padding: 10px;
+        width: 500px;
+        height: 500px;
+        overflow: hidden;
+    }
+    .offer .offerContent .box h1 {
+        font-size: 80px;
+        line-height: 110px;
+    }
+    .offer .offerContent .box h2 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .offer .offerContent .box p {
+        width: 450px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .logoBar {
+        width: 1200px;
+    }
+    .logoBar .bar {
+        width: 100%;
+        left: 10px;
+    }
+    .logoBar .bar img:nth-child(1) {
+        width: 165px;
+        height: 45px;
+    }
+    .logoBar .bar img {
+        width: 100px;
+        height: 110px;
+    }
+    .logoBar .bar img:nth-child(3) {
+        width: 160px;
+        height: 80px;
+    }
+    .logoBar .bar img:nth-child(5) {
+        width: 175px;
+        height: 50px;
+    }
+    .latestNews {
+        width: 1200px;
+    }
+    .latestNews .news {
+        width: 1200px;
+        height: 800px;
+    }
+    .latestNews .news h2 {
+        font-size: 32px;
+    }
+    .latestNews .newsContent {
+        width: 1200px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .latestNews .newsContent .imgNewsBox {
+        margin-top: 20px;
+        width: 575px;
+    }
+    .latestNews .newsContent .imgNewsBox img {
+        height: 335px;
+        width: 100%;
+    }
+    .latestNews .newsContent .imgNewsBox .imgText {
+        transform: translateX(10px);
+    }
+    .latestNews .newsContent .imgNewsBox h3 {
+        width: 580px;
+        font-size: 26px;
+        line-height: 36px;
+        left: 5px;
+    }
+    .latestNews .newsContent .imgNewsBox p {
+        width: 560px;
+        font-size: 16px;
+    }
+    .latestNews .newsContent .imgNewsBox button {
+        width: 100px;
+    }
+    .latestNews .newsContent .imgNewsBox button p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+@media (min-width: 992px) {
+    
+}
+@media (min-width: 768px) {
+    
+}
+@media (min-width: 576px) {
+    
 }
