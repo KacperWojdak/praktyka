@@ -1089,12 +1089,269 @@ footer .contentInfo .info a {
         transform: translate(240px, 20px);
     }
 }
-@media (min-width: 992px) {
+@media (max-width: 992px) {
+    header {
+        width: 992px;
+    }
+    header .headerText {
+        width: 690px;
+    }
+    header .headerText .textBox img {
+        transform: scale(0.8);
+    }
+    header .headerText .textBox p {
+        font-size: 14px;
+    }
+    header .headerText .textBox:nth-child(2) p {
+        width: 240px;
+    }
+    header .headerText .textBox:nth-child(3) p {
+        width: 360px;
+    }
+    .banner {
+        width: 992px;
+    }
+    .banner .menu {
+        width: 992px;
+    }
+    .banner .menu .logo {
+        transform: translateX(10px);
+    }
+    .banner .menu .menuBar {
+        transform: translateX(-25px);
+    }
+    .banner .title {
+        width: 620px;
+    }
+    .banner .title .arrow_left {
+        left: 20%;
+        top: 40%;    
+    }
+    .banner .title h1 {
+        font-size: 38px;
+        width: 500px;
+    }
+    .banner .title button {
+        width: 100px;
+    }
+    .banner .title button p {
+        font-size: 17px;
+    }
+    .banner .title .arrow_right {
+        left: 75%;
+        top: 40%;
+    }
+    .realization {
+        width: 992px;
+    }
+    .realization .realizationImg {
+        width: 992px;
+    }
+    .realization .realizationImg h3 {
+        font-size: 30px;
+        line-height: 41px;
+    }
+    .realization .realizationImg p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .realization .realizationImg button {
+        width: 100px;
+        height: 40px;
+        margin-top: 15px;   
+    }
+    .realization .realizationImg button p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .aboutUs {
+        width: 992px;
+    }
+    .aboutUs .aboutContent .col50 {
+        width: 50%;
+    }
+    .aboutUs .aboutContent .textAbout h2 {
+        height: 50px;
+        font-weight: 200;
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .aboutUs .aboutContent .textAbout p.ipsum1 {
+        font-size: 14px;
+        line-height: 28px; 
+    }
+    .aboutUs .aboutContent .textAbout p.ipsum2 {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .aboutUs .aboutContent .textAbout button {
+        width: 100px;
+        height: 42px;
+        margin-top: 0px;
+    }
+    .aboutUs .aboutContent .col50 {
+        width: 50%;
+    }
+    .aboutUs .aboutContent .col50 .imgAbout {
+        width: 50%;
+    }
+    .aboutUs .aboutContent .col50 .imgAbout img.about1 {
+        width: 460px;
+        height: 320px;
+    }
+    .aboutUs .aboutContent .col50 .imgAbout img.about2 {
+        margin-left: 45px;
+    }
+    .offer {
+        width: 992px;
+    }
+    .offerText {
+        width: 100%;
+    }
+    .offer .offerText h2 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .offer .offerText p {
+        width: 100%;
+        font-size: 17px;
+    }
+    .offer .offerContent {
+        flex-direction: column;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .offer .offerContent .box {
+        padding: 10px;
+        width: 500px;
+        height: 500px;
+        overflow: hidden;
+    }
+    .offer .offerContent .box h1 {
+        font-size: 80px;
+        line-height: 110px;
+    }
+    .offer .offerContent .box h2 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .offer .offerContent .box p {
+        width: 450px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .logoBar {
+        width: 992px;
+    }
+    .logoBar .bar {
+        width: 100%;
+        left: 10px;
+    }
+    .logoBar .bar img:nth-child(1) {
+        width: 165px;
+        height: 45px;
+    }
+    .logoBar .bar img {
+        width: 100px;
+        height: 110px;
+    }
+    .logoBar .bar img:nth-child(3) {
+        width: 160px;
+        height: 80px;
+    }
+    .logoBar .bar img:nth-child(5) {
+        width: 175px;
+        height: 50px;
+    }
+    .latestNews {
+        width: 992px;
+    }
+    .latestNews .news {
+        width: 1000px;
+        height: 800px;
+    }
+    .latestNews .news h2 {
+        font-size: 32px;
+        width: 800px;
+    }
+    .latestNews .news .newsContent {
+        width: 992px;
+        display: grid;
+        grid-template-columns: auto auto;
+        left: 100px;
+        justify-content: start;
+    }
+    .latestNews .news .newsContent .imgNewsBox {
+        margin-top: 20px;
+        width: 500px;
+    }
+    .latestNews .news .newsContent .imgNewsBox img {
+        height: 335px;
+        width: 100%;
+    }
+    .latestNews .news .newsContent .imgNewsBox .imgText {
+        width: 500px;
+    }
+    .latestNews .news .newsContent .imgNewsBox h3 {
+        width: 100%;
+        font-size: 24px;
+        line-height: 36px;
+        height: 60px;
+    }
+    .latestNews .news .newsContent .imgNewsBox p {
+        width: 100%;
+        font-size: 16px;
+    }
+    .latestNews .news .newsContent .imgNewsBox button {
+        width: 100px;
+    }
+    .latestNews .news .newsContent .imgNewsBox button p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .region {
+        width: 992px;
+    }
+    .region .regionText {
+        width: 992px;
+    }
+    .region .regionText h2 {
+        font-size: 35px;
+        width: 1000px;
+    }
+    .region .regionText p {
+        width: 1000px;
+        font-size: 15px;
+    }
+    .region .regionCity {
+        width: 1000px;
+        height: 500px;
+    }
+    .region .regionCity .cityBox {
+        width: 300px;
+    }
+    .region .regionCity .cityBox p {
+        width: 340px;
+        height: 28px;
+        font-size: 15px;
+    }
+    footer {
+        width: 992px;
+    }
+    footer .footerContent {
+        width: 992px;
+    }
+    footer .footerContent .logoImg {
+        transform: translate(40px, 25px);
+    }
+    footer .contentInfo {
+        transform: translate(240px, 20px);
+    }
+}
+@media (max-width: 768px) {
     
 }
-@media (min-width: 768px) {
-    
-}
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     
 }
