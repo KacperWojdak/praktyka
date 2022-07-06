@@ -1019,36 +1019,74 @@ footer .contentInfo .info a {
         width: 1200px;
         display: grid;
         grid-template-columns: auto auto;
-        left: 0;
+        left: 100px;
+        justify-content: start;
     }
     .latestNews .news .newsContent .imgNewsBox {
         margin-top: 20px;
-        width: 575px;
+        width: 500px;
     }
     .latestNews .news .newsContent .imgNewsBox img {
         height: 335px;
         width: 100%;
     }
     .latestNews .news .newsContent .imgNewsBox .imgText {
-        transform: translateX(10px);
+        width: 500px;
     }
     .latestNews .news .newsContent .imgNewsBox h3 {
-        width: 580px;
-        font-size: 26px;
+        width: 100%;
+        font-size: 24px;
         line-height: 36px;
-        left: 5px;
+        height: 60px;
     }
     .latestNews .news .newsContent .imgNewsBox p {
-        width: 560px;
+        width: 100%;
         font-size: 16px;
     }
     .latestNews .news .newsContent .imgNewsBox button {
         width: 100px;
-        transform: translateX(10px);
     }
     .latestNews .news .newsContent .imgNewsBox button p {
         font-size: 18px;
         line-height: 28px;
+    }
+    .region {
+        width: 1200px;
+    }
+    .region .regionText {
+        width: 1200px;
+    }
+    .region .regionText h2 {
+        font-size: 35px;
+        width: 1000px;
+    }
+    .region .regionText p {
+        width: 1000px;
+        font-size: 15px;
+    }
+    .region .regionCity {
+        width: 1000px;
+        height: 500px;
+    }
+    .region .regionCity .cityBox {
+        width: 300px;
+    }
+    .region .regionCity .cityBox p {
+        width: 340px;
+        height: 28px;
+        font-size: 15px;
+    }
+    footer {
+        width: 1200px;
+    }
+    footer .footerContent {
+        width: 1200px;
+    }
+    footer .footerContent .logoImg {
+        transform: translate(40px, 25px);
+    }
+    footer .contentInfo {
+        transform: translate(240px, 20px);
     }
 }
 @media (min-width: 992px) {
