@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Drewnoplast</title>
 <link rel="stylesheet" href="style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 </head>
 <body>
 <!--Header-->
@@ -35,16 +36,16 @@
             </div>
         </div>
         <div class="title">
-            <div class="arrow_left" onclick="changeBg()"></div>
+            <div class="arrow_left" onclick="arrowChange()"></div>
             <h1>Okna, drzwi i rolety dokładnie takie, jakich potrzebujesz</h1>
             <br>
             <button><p>Więcej</p></button>
-            <div class="arrow_right" onclick="changeBg()"></div>
+            <div class="arrow_right" onclick="arrowChange()"></div>
         </div>
         <div class="slider" id="slider">
-            <div class="circle active" onclick="changeBg()"></div>
-            <div class="circle" onclick="changeBg2()"></div>
-            <div class="circle" onclick="changeBg3()"></div>
+            <div class="circle active" onclick="changeBg(), sliderChange()"></div>
+            <div class="circle" onclick="changeBg2(), sliderChange()"></div>
+            <div class="circle" onclick="changeBg3(), sliderChange()"></div>
         </div>
     </section>
 <!--Realizacja-->
@@ -248,6 +249,7 @@
     </footer>
 
     <script>
+        //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow :)
         function changeBg() {
             var banner = document.getElementsByClassName('banner')[0];
             banner.style.backgroundImage = "url('bg.jpg')";
@@ -261,13 +263,30 @@
             banner.style.backgroundImage = "url('bg3.jpg')";
         }
 
-        var slider = document.getElementById("slider");
-        var circle = slider.getElementsByClassName("circle");
-        for (var i = 0; i < circle.length; i++) {
-            circle[i].addEventListener("click", function() {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
+        function sliderChange() {
+            var slider = document.getElementById("slider");
+            var circle = slider.getElementsByClassName("circle");
+            for (var i = 0; i < circle.length; i++) {
+                circle[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+            }
+        }
+        function arrowChange() {
+            var banner = document.getElementsByClassName('banner');
+            var images = ["url('bg.jpg')", "url('bg2.jpg')", "url('bg3.jpg')"], curIndex = 0;
+
+            $('.arrow_left').click(function() {
+                if (curIndex > 0) {
+                    $(banner).css('background-image', images[--curIndex]);
+                }
+            });
+            $('.arrow_right').click(function() {
+                if (curIndex < images.length - 1) {
+                    $(banner).css('background-image', images[++curIndex]);
+                }
             });
         }
     </script>
