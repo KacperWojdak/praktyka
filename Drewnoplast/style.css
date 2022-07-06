@@ -1303,6 +1303,7 @@ footer .contentInfo .info a {
     }
     .latestNews {
         width: 992px;
+        top: 4500px;
     }
     .latestNews .news {
         width: 1000px;
@@ -1310,7 +1311,7 @@ footer .contentInfo .info a {
     }
     .latestNews .news h2 {
         font-size: 32px;
-        width: 800px;
+        width: 700px;
     }
     .latestNews .news .newsContent {
         width: 992px;
@@ -1321,20 +1322,21 @@ footer .contentInfo .info a {
     }
     .latestNews .news .newsContent .imgNewsBox {
         margin-top: 20px;
-        width: 500px;
+        width: 400px;
     }
     .latestNews .news .newsContent .imgNewsBox img {
         height: 335px;
         width: 100%;
     }
     .latestNews .news .newsContent .imgNewsBox .imgText {
-        width: 500px;
+        width: 400px;
     }
     .latestNews .news .newsContent .imgNewsBox h3 {
         width: 100%;
         font-size: 24px;
         line-height: 36px;
         height: 60px;
+        margin-bottom: 10px;
     }
     .latestNews .news .newsContent .imgNewsBox p {
         width: 100%;
@@ -1349,20 +1351,21 @@ footer .contentInfo .info a {
     }
     .region {
         width: 992px;
+        top: 5400px;
     }
     .region .regionText {
-        width: 992px;
+        width: 700px;
     }
     .region .regionText h2 {
         font-size: 35px;
-        width: 1000px;
+        width: 700px;
     }
     .region .regionText p {
-        width: 1000px;
+        width: 700px;
         font-size: 15px;
     }
     .region .regionCity {
-        width: 1000px;
+        width: 700px;
         height: 500px;
     }
     .region .regionCity .cityBox {
@@ -1380,10 +1383,13 @@ footer .contentInfo .info a {
         width: 992px;
     }
     footer .footerContent .logoImg {
-        transform: translate(40px, 25px);
+        transform: translate(20px, 25px);
     }
     footer .contentInfo {
-        transform: translate(240px, 20px);
+        transform: translate(200px, 20px);
+    }
+    footer .contentInfo .info a {
+        font-size: 12px;
     }
 }
 @media (max-width: 768px) {
