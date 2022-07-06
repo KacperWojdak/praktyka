@@ -1008,16 +1008,18 @@ footer .contentInfo .info a {
         width: 1200px;
     }
     .latestNews .news {
-        width: 1200px;
+        width: 1000px;
         height: 800px;
     }
     .latestNews .news h2 {
         font-size: 32px;
+        width: 800px;
     }
     .latestNews .news .newsContent {
         width: 1200px;
         display: grid;
         grid-template-columns: auto auto;
+        left: 0;
     }
     .latestNews .news .newsContent .imgNewsBox {
         margin-top: 20px;
@@ -1042,6 +1044,7 @@ footer .contentInfo .info a {
     }
     .latestNews .news .newsContent .imgNewsBox button {
         width: 100px;
+        transform: translateX(10px);
     }
     .latestNews .news .newsContent .imgNewsBox button p {
         font-size: 18px;
