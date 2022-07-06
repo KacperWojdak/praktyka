@@ -640,7 +640,7 @@ header .flags .flag2 {
     flex-direction: column;
     align-items: flex-start;
     width: 1440px;
-    height: 1200px;
+    height: 800px;
 }
 .latestNews .news {
     width: 1440px;
@@ -655,7 +655,7 @@ header .flags .flag2 {
     height: 51px;
     transform: translateX(100px);
 }
-.latestNews .newsContent {
+.latestNews .news .newsContent {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -666,7 +666,7 @@ header .flags .flag2 {
     top: 50px;
     left: 100px;
 }
-.latestNews .newsContent .imgNewsBox {
+.latestNews .news .newsContent .imgNewsBox {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -676,12 +676,12 @@ header .flags .flag2 {
     margin-top: 50px;
     gap: 20px;
 }
-.latestNews .newsContent .imgNewsBox img {
+.latestNews .news .newsContent .imgNewsBox img {
     object-fit: cover;
     width: 610px;
     height: 338px;
 }
-.latestNews .newsContent .imgNewsBox .imgText {
+.latestNews .news .newsContent .imgNewsBox .imgText {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -690,7 +690,7 @@ header .flags .flag2 {
     width: 610px;
     height: 177px;
 }
-.latestNews .newsContent .imgNewsBox h3 {
+.latestNews .news .newsContent .imgNewsBox h3 {
     width: 610px;
     height: 82px;
     font-weight: 200;
@@ -699,7 +699,7 @@ header .flags .flag2 {
     text-transform: uppercase;
     color: #636363;
 }
-.latestNews .newsContent .imgNewsBox p {
+.latestNews .news .newsContent .imgNewsBox p {
     width: 609px;
     height: 90px;
     font-weight: 200;
@@ -707,7 +707,7 @@ header .flags .flag2 {
     line-height: 30px;
     color: #222;
 }
-.latestNews .newsContent .imgNewsBox button {
+.latestNews .news .newsContent .imgNewsBox button {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -718,7 +718,7 @@ header .flags .flag2 {
     cursor: pointer;
     border: none;
 }
-.latestNews .newsContent .imgNewsBox button p {
+.latestNews .news .newsContent .imgNewsBox button p {
     width: 69px;
     height: 25px;
     font-weight: 600;
@@ -1014,36 +1014,36 @@ footer .contentInfo .info a {
     .latestNews .news h2 {
         font-size: 32px;
     }
-    .latestNews .newsContent {
+    .latestNews .news .newsContent {
         width: 1200px;
         display: grid;
         grid-template-columns: auto auto;
     }
-    .latestNews .newsContent .imgNewsBox {
+    .latestNews .news .newsContent .imgNewsBox {
         margin-top: 20px;
         width: 575px;
     }
-    .latestNews .newsContent .imgNewsBox img {
+    .latestNews .news .newsContent .imgNewsBox img {
         height: 335px;
         width: 100%;
     }
-    .latestNews .newsContent .imgNewsBox .imgText {
+    .latestNews .news .newsContent .imgNewsBox .imgText {
         transform: translateX(10px);
     }
-    .latestNews .newsContent .imgNewsBox h3 {
+    .latestNews .news .newsContent .imgNewsBox h3 {
         width: 580px;
         font-size: 26px;
         line-height: 36px;
         left: 5px;
     }
-    .latestNews .newsContent .imgNewsBox p {
+    .latestNews .news .newsContent .imgNewsBox p {
         width: 560px;
         font-size: 16px;
     }
-    .latestNews .newsContent .imgNewsBox button {
+    .latestNews .news .newsContent .imgNewsBox button {
         width: 100px;
     }
-    .latestNews .newsContent .imgNewsBox button p {
+    .latestNews .news .newsContent .imgNewsBox button p {
         font-size: 18px;
         line-height: 28px;
     }
