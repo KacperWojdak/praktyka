@@ -249,7 +249,7 @@ header .flags .flag2 {
     align-items: flex-start;
     flex-direction: row;
     padding: 0;
-    width: 65px;
+    width: 40px;
     height: 15px;
     gap: 10px;
     top: 40px;
@@ -1015,6 +1015,9 @@ footer .contentInfo .info a {
     .banner {
         width: 1200px;
     }
+    .banner .slider {
+        width: 40px;
+    }
     .realization {
         width: 1200px;
     }
@@ -1280,6 +1283,9 @@ footer .contentInfo .info a {
     .banner .title .arrow_right {
         left: 75%;
         top: 40%;
+    }
+    .banner .slider {
+        width: 40px;
     }
     .realization {
         width: 992px;
@@ -1600,6 +1606,9 @@ footer .contentInfo .info a {
     .banner .title .arrow_right {
         left: 80%;
         top: 40%;
+    }
+    .banner .slider {
+        width: 40px;
     }
     .realization {
         width: 768px;
@@ -1963,6 +1972,7 @@ footer .contentInfo .info a {
     }
     .banner .slider {
         transform: translateX(-70px);
+            width: 40px;
     }
     .realization {
         width: 576px;

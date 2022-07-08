@@ -36,16 +36,15 @@
                 </div>
             </div>
             <div class="title">
-                <div class="arrow_left" onclick="arrowChange()"></div>
+                <div class="arrow_left" onclick="arrowChange(), sliderChange()"></div>
                 <h1>Okna, drzwi i rolety dokładnie takie, jakich potrzebujesz</h1>
                 <br>
                 <button><p>Więcej</p></button>
-                <div class="arrow_right" onclick="arrowChange()"></div>
+                <div class="arrow_right" onclick="arrowChange(), sliderChange()"></div>
             </div>
             <div class="slider" id="slider">
                 <div class="circle active" onclick="changeBg(), sliderChange()"></div>
                 <div class="circle" onclick="changeBg2(), sliderChange()"></div>
-                <div class="circle" onclick="changeBg3(), sliderChange()"></div>
             </div>
     </section>
 <!--Realizacja-->
@@ -257,10 +256,6 @@
         function changeBg2() {
             var banner = document.getElementsByClassName('banner')[0];
             banner.style.backgroundImage = "url('bg2.jpg')";
-        }
-        function changeBg3() {
-            var banner = document.getElementsByClassName('banner')[0];
-            banner.style.backgroundImage = "url('bg3.jpg')";
         }
 
         function sliderChange() {
